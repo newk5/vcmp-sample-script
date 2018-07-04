@@ -1,5 +1,7 @@
 package com.github.newk5.vcmp.samplescript.controllers;
 
+import com.github.newk5.vcmp.samplescript.commands.AdminCommands;
+import com.github.newk5.vcmp.samplescript.commands.PlayerCommands;
 import com.maxorator.vcmp.java.plugin.integration.RootEventHandler;
 import com.maxorator.vcmp.java.plugin.integration.placeable.CheckPoint;
 import com.maxorator.vcmp.java.plugin.integration.placeable.GameObject;
@@ -25,6 +27,9 @@ public class MainController extends RootEventHandler {
         this.timerRegistry = new TimerRegistry();
         this.onClientData = new ClientDataController();
         this.commandRegistry = new CommandRegistry(server);
+
+        this.commandRegistry.addController(new PlayerCommands());
+        this.commandRegistry.addController(new AdminCommands());
 
     }
 
