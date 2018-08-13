@@ -37,6 +37,24 @@ public class MainController extends RootEventHandler {
     public void onServerLoadScripts() {
 
     }
+    
+    
+
+    public void onPlayerWeaponChange(Player p, int oldWep, int newWep) {
+
+    }
+
+    public void onPlayerMove(Player player, float lastX, float lastY, float lastZ, float newX, float newY, float newZ) {
+
+    }
+
+    public void onPlayerHealthChange(Player player, float lastHP, float newHP) {
+
+    }
+
+    public void onPlayerArmourChange(Player player, float lastArmour, float newArmour) {
+
+    }
 
     @Override
     public void onPlayerConnect(Player player) {
